@@ -306,6 +306,7 @@ li {
 
 .bottom_part{
   background-color: #002D62;
+  width: 100%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -319,6 +320,8 @@ li {
   align-items: center;
   justify-content: center;
   justify-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
 }
 .telegram-button {
@@ -327,7 +330,7 @@ li {
   justify-content: center;
   padding: 10px 20px;
   background-color: #0088cc;
-  margin-bottom: 45px;
+
   color: white;
   font-size: 2rem;
   font-weight: bold;
@@ -344,7 +347,7 @@ li {
 }
 
 .telegram-button img {
-  margin-right: 8px;
+  
   width: 24px;
   height: 24px;
 }
@@ -371,7 +374,13 @@ li {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+.mastermoney{
+  padding: 0;
+  margin: 0;
 }
 
 .wp-button:hover {
@@ -380,7 +389,7 @@ li {
 }
 
 .wp-button img {
-  margin-right: 8px;
+  
   width:100%;
   height: 24px;
 }
@@ -390,7 +399,7 @@ li {
   align-items: center;
   justify-content: center;
   justify-items: center;
-  padding: 50px;
+  padding: 30px;
 }
 .Why{
   display: flex;
@@ -398,10 +407,11 @@ li {
   align-items: center;
   justify-content: center;
   justify-items: center;
-  padding: 50px;
+  padding: 30px;
 }
 .money{
   width: 100%;
+  color: black;
   height: 444px;
   background-image: url("./assets/money.jpeg"); /* Replace with the path to your image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -417,13 +427,21 @@ width: 20%;
 
 
 @media (width < 540px) {
+  .money{
+    font-size: 0.5rem;
+    color: #1fcc00;
+    background-image: url("./assets/vk.png"); /* Replace with the path to your image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center;
+  }
   .container{
     height: 20vh;
   }
   .container img {
     position: absolute;
     width: 200%;
-    max-width: 300px;
+    max-width: 350px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

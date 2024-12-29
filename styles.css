@@ -29,7 +29,7 @@ a {
 
 body {
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #dbdce0;
+  background-color: #002D62;
 }
 
 body::after {
@@ -39,7 +39,8 @@ body::after {
   width: 0;
   top: 0;
   right: 0;
-  background-color: var(--text-dark);
+  background-color: #002D62;
+  
   z-index: -1;
 
   animation: body-bg 1s ease-in-out forwards;
@@ -62,7 +63,9 @@ body::before {
   transform: translate(-50%, -50%);
   font-size: 70rem;
   font-weight: 200;
-  color: var(--white);
+  background-color:#002D62;
+  /* background-image: url("./assets/bat.jpg"); /* Replace with the path to your image */
+  
   z-index: -1;
   opacity: 0.5;
 }
@@ -70,7 +73,7 @@ body::before {
 .container {
   position: relative;
   isolation: isolate;
-  min-height: 90vh;
+  min-height: 40vh;
   max-width: 100%;
   margin-inline: auto;
   overflow: hidden;
@@ -118,7 +121,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30rem;
+  font-size: 25rem;
   line-height: 30rem;
   font-weight: 900;
   color: var(--primary-color);
@@ -302,7 +305,7 @@ li {
 }
 
 .bottom_part{
-  background-color: #474748;
+  background-color: #002D62;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -324,8 +327,9 @@ li {
   justify-content: center;
   padding: 10px 20px;
   background-color: #0088cc;
+  margin-bottom: 45px;
   color: white;
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 25px;
@@ -344,6 +348,42 @@ li {
   width: 24px;
   height: 24px;
 }
+.button_wp{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+}
+.wp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px;
+  background-color: #1fcc00;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 70px;
+}
+
+.wp-button:hover {
+  background-color: #006ba1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wp-button img {
+  margin-right: 8px;
+  width:100%;
+  height: 24px;
+}
 .About{
   display: flex;
   justify-items: center;
@@ -360,8 +400,26 @@ li {
   justify-items: center;
   padding: 50px;
 }
+.money{
+  width: 100%;
+  height: 444px;
+  background-image: url("./assets/money.jpeg"); /* Replace with the path to your image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center;
+  height: auto;
+  padding: 144px;
+
+}
+.money img{
+width: 20%;
+}
+
 
 @media (width < 540px) {
+  .container{
+    height: 20vh;
+  }
   .container img {
     position: absolute;
     width: 200%;

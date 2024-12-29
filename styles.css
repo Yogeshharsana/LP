@@ -429,11 +429,15 @@ width: 20%;
 @media (width < 540px) {
   .money{
     font-size: 0.5rem;
+    width: 100%;
     color: #1fcc00;
     background-image: url("./assets/vk.png"); /* Replace with the path to your image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: cover; /* Ensures the image covers the entire element */
   background-position: center;
+  }
+  .money img{
+    width: 100%;
   }
   .container{
     height: 20vh;

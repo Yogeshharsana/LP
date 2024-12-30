@@ -454,6 +454,27 @@ width: 20%;
 .mid_text{
   text-align: center;
 }
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Button Styles */
+.meta-button {
+  text-decoration: none;
+  color: white;
+  background-color: #25D366; /* WhatsApp green color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.meta-button:hover {
+  background-color: #128C7E; /* Darker WhatsApp green */
+}
 
 
 @media (width < 540px) {

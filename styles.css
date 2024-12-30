@@ -29,7 +29,7 @@ a {
 
 body {
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #002D62;
+  background-color: #028168;
 }
 
 body::after {
@@ -39,7 +39,7 @@ body::after {
   width: 0;
   top: 0;
   right: 0;
-  background-color: #002D62;
+  background-color: #028168;
   
   z-index: -1;
 
@@ -63,7 +63,7 @@ body::before {
   transform: translate(-50%, -50%);
   font-size: 70rem;
   font-weight: 200;
-  background-color:#002D62;
+  background-color:#028168;
   /* background-image: url("./assets/bat.jpg"); /* Replace with the path to your image */
   
   z-index: -1;
@@ -305,7 +305,7 @@ li {
 }
 
 .bottom_part{
-  background-color: #002D62;
+  background-color: #028168;
   width: 100%;
   color: #ffffff;
   display: flex;
